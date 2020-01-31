@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-archivos = ['datos1.txt', 'datos2.txt']
+archivos = ['datos1_worst_case.txt', 'datos2_worst_case.txt']
 color = ['blue', 'red']
 
 

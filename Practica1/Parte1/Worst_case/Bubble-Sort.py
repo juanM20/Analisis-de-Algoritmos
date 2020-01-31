@@ -1,4 +1,5 @@
 from time import time
+import os
 
 def BubbleSort(A):
 
@@ -26,14 +27,24 @@ def BubbleSort(A):
 
 
 if __name__ == "__main__":
+
+    cont = 0
+
     print('Bubble Sort Algorithm')
 
-    dato2 = open('datos2.txt', 'w')
+    for i in range(1000, 10000+1, 1000):
+        cmd = "python worst_case_script.py " +str(i) 
+        os.system(cmd)
+        cont += 1
+        print('Archivo {} creado'.format(cont))
+    
+
+    dato2 = open('datos2_worst_case.txt', 'w')
 
     for i in range(1000,10000+1, 1000):
 
         A = []
-        file_name = 'scripts/random_'+str(i)+'.txt'
+        file_name = 'worst_'+str(i)+'.txt'
 
         f = open(file_name, 'r')
         for x in f:
