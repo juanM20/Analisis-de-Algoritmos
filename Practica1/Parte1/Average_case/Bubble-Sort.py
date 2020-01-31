@@ -5,12 +5,17 @@ def BubbleSort(A):
     inicio = time()
 
     n = len(A)
-    for k in range(0, n-1):
-        for i in range(0, n-1-k):
-            if A[i] > A[i+1]:
+    while True:
+        swapped = False
+        for i in range(1, n):
+            if A[i-1] > A[i]:
                 aux = A[i]
-                A[i] = A[i+1]
-                A[i+1] = aux
+                A[i] = A[i-1]
+                A[i-1] = aux
+                swapped = True
+        n = n-1
+        if not swapped:
+            break
 
     final = time()
     tiempo_ejecucion = (final-inicio)*1000
@@ -25,7 +30,7 @@ if __name__ == "__main__":
 
     dato2 = open('datos2.txt', 'w')
 
-    for i in range(1000,10000+1, 100):
+    for i in range(1000,10000+1, 1000):
 
         A = []
         file_name = 'scripts/random_'+str(i)+'.txt'

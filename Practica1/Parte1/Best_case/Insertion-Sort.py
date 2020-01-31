@@ -1,4 +1,5 @@
 from time import time
+import os
 
 def InsertionSort(A):
 
@@ -19,19 +20,25 @@ def InsertionSort(A):
 
 
 
-
-
-
 if __name__ == "__main__":
-    
+
+    cont = 0
+
     print('Insertion Sort Algorithm')
 
-    dato1 = open('datos1.txt', 'w')
+    for i in range(1000, 10000+1, 1000):
+        cmd = "python best_case_script.py " +str(i) 
+        os.system(cmd)
+        cont += 1
+        print('Archivo {} creado'.format(cont))
 
-    for i in range(1000, 10000+1, 100):
+
+    dato1 = open('dato1_best_case.txt', 'w')
+
+    for i in range(1000, 10000+1, 1000):
 
         A = []
-        file_name = 'scripts/random_'+str(i)+'.txt'
+        file_name = 'best_'+str(i)+'.txt'
 
         f = open(file_name, 'r')
         for x in f:
