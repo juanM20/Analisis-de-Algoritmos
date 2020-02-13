@@ -10,8 +10,17 @@ def fibo1(n):
 
 if __name__ == '__main__':
     
-    inicio = time()
-    fibo1(40)
-    final = time()
-    print((final-inicio)*1000)
+    f = open("Algoritmo1.txt", "w")
+
+    f.write("N  Algoritmo 1\n")
+    
+    for n in range(45):
+
+        inicio = time()
+        fibo1(n)
+        final = time()
+        tiempo = (final-inicio)*1000
+
+        f.write("{} {}\n".format(n, tiempo))
+        
     
