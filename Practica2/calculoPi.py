@@ -22,7 +22,7 @@ def mc_pi_aprox(N=10000):
     plt.plot(x[exterior], y[exterior], 'r.')
     print(x[0], x[10])
     plt.plot(0, 0, label='$\hat \pi$ = {:4.4f}\nerror = {:4.4f}%'.format(pi,error), alpha=0)
-    plt.axis('square')
+    #plt.axis('square')
     plt.legend(frameon=True, framealpha=0.9, fontsize=14)
     plt.show()
 
