@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h3>Aproximación de Integrales</h3>        
+    </header>
+
+    <div class="main">
+        <div class="opciones">
+            <div class="integrales-opc">
+                <p>Seleccione la integral:</p>
+                <select name="Integrales" id="Integrales">
+                    <option value="F1">Integral 1</option>
+                    <option value="F2">Integral 2</option>
+                    <option value="F3">Integral 3</option>
+                    <option value="F4">Integral 4</option>
+                    <option value="F5">Integral 5</option>
+                </select>
+            </div>
+            <div class="rangos">
+                <label for="a">a: </label>
+                <input type="text">
+                <label for="b">b: </label>
+                <input type="text">
+            </div>
+            
+            <div class="integral-exacta">
+                <button id="int-exacta">Calcula la integral exacta</button>
+                <p id="resultado"> </p>
+            </div>
+        </div>
+        <div class="grafica"> 
+
+        </div>
+    </div>
+
+    <div class="simulacion">
+        <div class="numeros-aleatorios">
+            <label for="">Ingresa numeros aleatorios (N): </label>
+            <input type="text">
+            <button id="simulacion">Simula</button>  
+        </div>
+        <div class="calculo-aprox">
+            <button id="integral-aprox">Calcula integral aproximada: </button>
+            <p id="resultado aprox"> </p>
+        </div>
+    </div>
+
+
+<script src="MC.js"></script>
+</body>
+</html>
