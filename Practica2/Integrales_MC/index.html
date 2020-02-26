@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
     <header>
-        <h3>Aproximación de Integrales</h3>        
+        <h2>Aproximación de Integrales</h2>        
     </header>
 
     <div class="main">
@@ -25,34 +29,26 @@
             </div>
             <div class="rangos">
                 <label for="a">a: </label>
-                <input type="text">
+                <input type="text" id="a">
                 <label for="b">b: </label>
-                <input type="text">
+                <input type="text" id="b">
             </div>
-            
-            <div class="integral-exacta">
-                <button id="int-exacta">Calcula la integral exacta</button>
-                <p id="resultado"> </p>
+            <div class="numeros-aleatorios">
+                <label for="">Ingresa numeros aleatorios (N): </label>
+                <input type="text" id="numeros_aleatorios">
+                <button id="simulacion">Simula</button>  
+            </div>
+            <div class="Resultado">
+                <h4>Aproximación de la integral: </h4>
+                <p id="Resultado"></p>
             </div>
         </div>
         <div class="grafica"> 
-
+            <canvas id="myChart"></canvas>
         </div>
     </div>
 
-    <div class="simulacion">
-        <div class="numeros-aleatorios">
-            <label for="">Ingresa numeros aleatorios (N): </label>
-            <input type="text">
-            <button id="simulacion">Simula</button>  
-        </div>
-        <div class="calculo-aprox">
-            <button id="integral-aprox">Calcula integral aproximada: </button>
-            <p id="resultado aprox"> </p>
-        </div>
-    </div>
-
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="MC.js"></script>
 </body>
 </html>

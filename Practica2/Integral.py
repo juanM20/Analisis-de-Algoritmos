@@ -16,7 +16,7 @@ def aprox_integral(n, b, a):
         i=i
         ui = random.uniform(a, b)
         sum  = sum + f1(ui*(b-a) + a)
-    return (b-a)/n * sum
+    return ((b-a)/n)*sum
 
 
 

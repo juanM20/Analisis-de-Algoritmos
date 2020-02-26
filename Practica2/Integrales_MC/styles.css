@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo';
+}
+
+
+header {
+    background: #2c67d4;
+    margin: auto;
+    height: 70px;
+}
+
+
+header h2 {
+    margin: 0;
+    padding: 20px;
+    color: #f3f3f3;
+}
+
