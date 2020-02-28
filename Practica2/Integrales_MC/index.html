@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -16,10 +24,10 @@
     </header>
 
     <div class="main">
-        <div class="opciones">
-            <div class="integrales-opc">
-                <p>Seleccione la integral:</p>
-                <select name="Integrales" id="Integrales">
+        <div class="opciones col-md-6">
+            <div class="integrales-opc form-group">
+                <label>Seleccione la integral:</label>
+                <select class="form-control col-md-6" name="Integrales" id="Integrales">
                     <option value="F1">Integral 1</option>
                     <option value="F2">Integral 2</option>
                     <option value="F3">Integral 3</option>
@@ -29,15 +37,17 @@
             </div>
             <div class="rangos">
                 <label for="a">a: </label>
-                <input type="text" id="a">
+                <input type="text" class="form-control col-md-2" id="a">
                 <label for="b">b: </label>
-                <input type="text" id="b">
+                <input type="text" class="form-control col-md-2" id="b">
             </div>
             <div class="numeros-aleatorios">
                 <label for="">Ingresa numeros aleatorios (N): </label>
-                <input type="text" id="numeros_aleatorios">
-                <button id="simulacion">Simula</button>  
+                <input type="text" class="form-control col-md-6" id="numeros_aleatorios">
+                <br>
+                <button id="simulacion" class="btn btn-primary col-md-6">Simula</button>  
             </div>
+            <br>
             <div class="Resultado">
                 <h4>Aproximación de la integral: </h4>
                 <p id="Resultado"></p>

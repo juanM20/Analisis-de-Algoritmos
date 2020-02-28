@@ -19,3 +19,30 @@ header h2 {
     color: #f3f3f3;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: -5px 7px 13px -5px rgba(0,0,0,0.56);
+}
+
+
+
+.rangos {
+    display: flex;
+    flex-direction: row;
+    margin: 5px
+}
+
+.rangos label {
+    padding: 5px;
+}
+
