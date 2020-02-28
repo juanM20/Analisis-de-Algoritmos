@@ -6,7 +6,7 @@ from scipy import stats
 np.random.seed(1984)
 
 
-def mc_pi_aprox(N=10000):
+def mc_pi_aprox(N=1000000):
     plt.figure(figsize=(6,6))
     x, y = np.random.uniform(-1, 1, size=(2, N))
     print(x, y)
