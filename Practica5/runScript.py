@@ -11,7 +11,7 @@ if __name__ == '__main__':
 		for i in range(0, int(sys.argv[1])):
 			name= input("Nombre de archivo sin extension "+str(i+1)+": ")
 			inputFileList.append(name+".txt")
-			outputFileList.append(name+"Resultados")
+			outputFileList.append(name+"Resultado")
 
 	for i in range(0, len(inputFileList)):
 		runCmd = "python LCS.py "+inputFileList[i]+" "+outputFileList[i]
