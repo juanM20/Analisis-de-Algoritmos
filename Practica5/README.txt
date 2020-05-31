@@ -23,7 +23,7 @@ EjercicioPrueba.txt			EjercicioPrueba
 Después de haber ingresado todos los nombres, espere a que el programa principal LCS.py
 termine de ejecutarse, se dará un mensaje de finalización y podrá consultar los archivos
 de resultado con la infomración correspondiente al archivo procesado, estos nuevos
-archivos tienen el nombre de quel procesado seguido de la palabra "Resultado".
+archivos tienen el nombre de aquel procesado seguido de la palabra "Resultado".
 
 
 3CM1
