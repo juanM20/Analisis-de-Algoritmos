@@ -78,8 +78,8 @@ def Cambio(tabla, N, denominaciones):
     for i in range(0,cant_denominaciones,1):
         print("\n")
         for j in range(0,N+1,1):
-            print(str(tabla[i][j].cantidad)+" "+str(tabla[i][j].diccionario), end=" ")
-
+            #print(str(tabla[i][j].cantidad)+" "+str(tabla[i][j].diccionario), end=" ")
+            print(str(tabla[i][j].cantidad)+" ", end=" ")
     return [minimo,conjunto_monedas]
 
 
